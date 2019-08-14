@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!-- FAVICON START -->
+      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+      <link rel="manifest" href="favicon/manifest.json">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+      <meta name="theme-color" content="#ffffff">
+      <!-- FAVICON END -->
+      <!-- NAV BAR START -->
+      <nav class="navbar navbar-expand-lg navbar bg-success">
+         <a class="navbar-brand" href="#ardi1">Game 1</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link active" href="#ardi2">game 2 <span class="sr-only">(current)</span></a>
+               <a class="nav-item nav-link" href="#ardi3">Game 3</a>
+               <a class="nav-item nav-link" href="#ardi4">Game 4</a>
+               <a class="nav-item nav-link" href="#ardi5" tabindex="-1" aria-disabled="true">Game 5</a>
+            </div>
+         </div>
+      </nav>
+      <!-- NAV BAR END -->
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <title>Interactive web site for kids!</title>
+   </head>
+   <body>
+      <!-- GAME 1 START -->
+      <h1 style="color: yellow;">Hello, kids!</h1>
+      <p style="color:red;">hello everyone ! this web site is for kids and i try to some intresting game for them. some games would be challenging but it's gonna be fun. so enjoy everyone and have fun </p>
+      <h1 id="ardi1" style="color: green;">GAME 1: Hello world !</h1>
+      <input type="button" name="Click" value="Click" onclick="insert()">
+      <p id="insert"></p>
+      <img alt="image" src="image/balloons.jpg">
+      <!-- GAME 1 END -->
+      <br>
+      <p style="color: tomato;">Nice ! you pass the firsty Game ! Now it's time to start the game 2</p>
+      <hr>
+      <h1 id="ardi2" style="color: purple;">GAME 2: Convert Fahrenheit to Celsius!</h1>
+      <img alt="image" src="image/cartoon light.jpeg"><br>
+      <!-- GAME 2 START -->
+      <input type="number" id="Fahrenheit">
+      <input type="button" value="Check" onclick="Convert()">
+      <p id="resultOfConvert"></p>
+      <!-- GAME 2 END -->
+      <P style="color: orange;">wow! you pass the another one very good. are ready for next one ?</P>
+      <hr>
+      <!-- GAME 3 START -->
+      <h1 id="ardi3" style="color: pink;">GAME 3 : Asking Question?</h1>
+      <br>
+      <img alt="image" src="image/detective.png" height="300" width="300"><br>
+      <ol>
+         <!-- FIRST PART START -->
+         <li>We’ll start with some questions from the arithmetic.children have to answer 2 questions 1.9 minutes. Yes, less than a minute per question. They aren’t allowed a calculator, and they don’t get multiple choice options like you do in this quiz. So let's go: 707 + 1,818 =</li>
+         <label>2525</label>
+         <input id="optionA" type="radio" name="1" value="option A"><br>
+         <label>2255</label>
+         <input type="radio" name="1" value="option B"><br>
+         <label>2552</label>
+         <input type="radio" name="1" value="option C">
+         <br>
+         <label>2616</label>
+         <input type="radio" name="1" value="option D">
+         <br>
+         <input type="button" name="result" value="Check" onclick="CheckOfQuestion1()">
+         <!-- FIRST PART END -->
+         <!-- SECEND PART START -->
+         <li>Now try: 50 + (36 ÷ 6)</li>
+         <label>14.3</label>
+         <input type="radio" name="1" value="number 1"><br>
+         <label>42</label>
+         <input type="radio" name="1" value="numbeer 2"><br>
+         <label>56</label>
+         <input id="numA" type="radio" name="1" value="number 3"><br>
+         <label>86</label>
+         <input type="radio" name="1" value="number 4">
+         <br>
+         <input type="button" name="result" value="check" onclick="checkOfQuestion2()">
+         <!-- SECEND PART END -->
+      </ol>
+      <!-- GAME 3 END -->
+      <P style="color: blue;"  >well i hope that you enjoy the math game. i really intresed in math when i was kid anyway let's go to the next round</P>
+      <hr>
+      <!-- GAME 4 START -->
+      <H1 id="ardi4" style="color: gray;" >GAME 4 : Check your age</H1>
+      <img src="image/caveman.png" width="300" height="300">
+      <input id="age" type="number">
+      <input type="button" value="check" onclick="Age()">
+      <!-- GAME 4 END -->
+      <p style="color: space;">This is the last part of our game and I hope you enjoy my wb site kids i create this web site by myself not copy from another project or site ! thank you so much for visiting ! pleasse tell your exprience in my web site to your freind so they can visit us have fun !</p>
+      <hr>
+      <!-- GAME 5 START -->
+      <h1 id="ardi5" style="color: brown;">GAME 5 : Is it even or odd?</h1>
+      <img src="image/mathematics.jpg" width="300" height="300">
+      <input type="number" id="numbers">
+      <input type="button" value="check" onclick="Number()">
+      <!-- GAME 5 START -->
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script type="text/javascript" src="js/main.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   </body>
+</html>
